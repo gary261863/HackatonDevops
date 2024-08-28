@@ -3,13 +3,19 @@ import dbConnect from "../lib/dbConnect";
 import Pet from "../models/Pet";
 
 // TODO: Import Hours component
+import Hours from '../components/Hours'; // Asegúrate de que la ruta es correcta
 
 const Index = ({ pets }) => {
 
   return (
     <>
 
-      {/* TODO: Display Hours component */}
+      {/* TODO: Display Hours component */
+        <div>
+          {/*<h1>Bienvenidos al Refugio de Animales</h1>*/}
+          <Hours />
+        </div>
+      }
 
       {/* Create a card for each pet */}
       {pets.map((pet) => (
