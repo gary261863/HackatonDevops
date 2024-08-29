@@ -1,8 +1,9 @@
-name: Deploy to Azure
+  name: Deploy to Azure
   on:
     push:
       branches:
         - main
+        
   jobs:
     deploy:
       runs-on: ubuntu-latest
